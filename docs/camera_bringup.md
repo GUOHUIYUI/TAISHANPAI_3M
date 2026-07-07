@@ -131,3 +131,29 @@ bash scripts/collect_camera_info.sh docs/camera_logs/manual_test_01
 ## 本阶段结论
 
 待板端验证后填写。
+
+## 2026-07-07 板端采集结果
+
+原始日志已保存到 `docs/camera_logs/`，摘要见 `docs/camera_logs/summary.md`。
+
+本次验证结论：
+
+- 板端系统为 Debian 12，内核 `Linux 6.1.99 aarch64`。
+- IMX415 已被内核识别，有效 sensor 为 `m00_b_imx415 4-0037`。
+- 有效链路为 `m00_b_imx415 4-0037 -> rockchip-csi2-dphy0 -> rockchip-mipi-csi2 -> rkcif/rkisp`。
+- `/dev/video-camera0` 指向 `/dev/video33`，属于 `rkisp_mainpath`，默认 `NV12 3840x2160`，建议作为后续 OpenCV 预览优先节点。
+- `/dev/video0` 属于 `rkcif`，输出 `GB10 3840x2160` raw Bayer，更适合底层链路验证。
+
+下一步优先做抓帧验证：
+
+```bash
+v4l2-ctl -d /dev/video-camera0 --stream-mmap --stream-count=30 --stream-to=/tmp/camera0_nv12.raw
+ls -lh /tmp/camera0_nv12.raw
+```
+
+若别名节点异常，改用实际节点：
+
+```bash
+v4l2-ctl -d /dev/video33 --stream-mmap --stream-count=30 --stream-to=/tmp/video33_nv12.raw
+ls -lh /tmp/video33_nv12.raw
+```

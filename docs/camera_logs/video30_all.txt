@@ -1,0 +1,1 @@
+Failed to open /dev/video30: No such device

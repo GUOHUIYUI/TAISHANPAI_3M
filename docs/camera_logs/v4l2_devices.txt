@@ -1,0 +1,79 @@
+rkisp-statistics (platform: rkisp):
+	/dev/video39
+	/dev/video40
+	/dev/video48
+	/dev/video49
+	/dev/video57
+	/dev/video58
+
+rkcif (platform:rkcif-mipi-lvds):
+	/dev/video0
+	/dev/video1
+	/dev/video2
+	/dev/video3
+	/dev/video4
+	/dev/video5
+	/dev/video6
+	/dev/video7
+	/dev/video8
+	/dev/video9
+	/dev/video10
+	/dev/media0
+
+rkcif-mipi-lvds1 (platform:rkcif-mipi-lvds1):
+	/dev/media1
+
+rkcif-mipi-lvds3 (platform:rkcif-mipi-lvds3):
+	/dev/media2
+
+rkisp_mainpath (platform:rkisp-vir0):
+	/dev/video33
+	/dev/video34
+	/dev/video35
+	/dev/video36
+	/dev/video37
+	/dev/video38
+	/dev/video41
+	/dev/media3
+
+rkisp_mainpath (platform:rkisp-vir1):
+	/dev/video42
+	/dev/video43
+	/dev/video44
+	/dev/video45
+	/dev/video46
+	/dev/video47
+	/dev/video50
+	/dev/media4
+
+rkisp_mainpath (platform:rkisp-vir2):
+	/dev/video51
+	/dev/video52
+	/dev/video53
+	/dev/video54
+	/dev/video55
+	/dev/video56
+	/dev/video59
+	/dev/media5
+
+rkvpss_scale0 (platform:rkvpss-vir0):
+	/dev/video61
+	/dev/video62
+	/dev/video63
+	/dev/video64
+	/dev/media6
+
+rkvpss_scale0 (platform:rkvpss-vir1):
+	/dev/video65
+	/dev/video66
+	/dev/video67
+	/dev/video68
+	/dev/media7
+
+rkvpss_scale0 (platform:rkvpss-vir2):
+	/dev/video69
+	/dev/video70
+	/dev/video71
+	/dev/video72
+	/dev/media8
+
