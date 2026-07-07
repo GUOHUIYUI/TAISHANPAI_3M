@@ -157,3 +157,20 @@ ls -lh /tmp/camera0_nv12.raw
 v4l2-ctl -d /dev/video33 --stream-mmap --stream-count=30 --stream-to=/tmp/video33_nv12.raw
 ls -lh /tmp/video33_nv12.raw
 ```
+
+## 2026-07-07 抓帧验证结果
+
+已在板端执行：
+
+```bash
+v4l2-ctl -d /dev/video-camera0 --stream-mmap --stream-count=30 --stream-to=/tmp/camera0_nv12.raw
+ls -lh /tmp/camera0_nv12.raw
+```
+
+并将结果拉回到 `docs/camera0_nv12.raw`。
+
+本次 raw 文件大小为 `373248000` 字节，和 `3840 x 2160 x 1.5 x 30 = 373248000` 完全一致，说明 `/dev/video-camera0` 能按 NV12 格式连续输出 30 帧图像数据。
+
+由于 raw 文件体积较大，不纳入 Git 提交；仓库只保留抓帧命令、文件大小和结论。后续如需可视化验证，可从 raw 中截取单帧并转换为 PNG/JPG，再将小体积图片提交到 `docs/`。
+
+阶段结论：摄像头链路已完成从驱动识别、media pipeline 确认到 `/dev/video-camera0` 连续抓帧的验证。下一阶段可以进入 OpenCV 实时预览。
