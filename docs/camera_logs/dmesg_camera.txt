@@ -1,0 +1,318 @@
+[    5.510653] platform csi2-dcphy0: Fixed dependency cycle(s) with /mipi0-csi2
+[    5.511350] platform mipi0-csi2: Fixed dependency cycle(s) with /csi2-dcphy0
+[    5.512106] platform csi2-dphy0: Fixed dependency cycle(s) with /mipi1-csi2
+[    5.512771] platform mipi1-csi2: Fixed dependency cycle(s) with /csi2-dphy0
+[    5.513514] platform csi2-dphy3: Fixed dependency cycle(s) with /mipi3-csi2
+[    5.514178] platform mipi3-csi2: Fixed dependency cycle(s) with /csi2-dphy3
+[    5.515146] platform mipi0-csi2: Fixed dependency cycle(s) with /rkcif-mipi-lvds
+[    5.515851] platform rkcif-mipi-lvds: Fixed dependency cycle(s) with /mipi0-csi2
+[    5.516676] platform mipi1-csi2: Fixed dependency cycle(s) with /rkcif-mipi-lvds1
+[    5.517388] platform rkcif-mipi-lvds1: Fixed dependency cycle(s) with /mipi1-csi2
+[    5.518234] platform mipi3-csi2: Fixed dependency cycle(s) with /rkcif-mipi-lvds3
+[    5.518953] platform rkcif-mipi-lvds3: Fixed dependency cycle(s) with /mipi3-csi2
+[    5.519789] platform rkcif-mipi-lvds-sditf: Fixed dependency cycle(s) with /rkisp-vir0
+[    5.520542] platform rkisp-vir0: Fixed dependency cycle(s) with /rkcif-mipi-lvds-sditf
+[    5.521353] platform rkcif-mipi-lvds1-sditf: Fixed dependency cycle(s) with /rkisp-vir1
+[    5.522109] platform rkisp-vir1: Fixed dependency cycle(s) with /rkcif-mipi-lvds1-sditf
+[    5.522928] platform rkcif-mipi-lvds3-sditf: Fixed dependency cycle(s) with /rkisp-vir2
+[    5.523684] platform rkisp-vir2: Fixed dependency cycle(s) with /rkcif-mipi-lvds3-sditf
+[    5.524751] platform rkisp-vir0-sditf: Fixed dependency cycle(s) with /rkvpss-vir0
+[    5.525469] platform rkvpss-vir0: Fixed dependency cycle(s) with /rkisp-vir0-sditf
+[    5.526255] platform rkisp-vir1-sditf: Fixed dependency cycle(s) with /rkvpss-vir1
+[    5.526979] platform rkvpss-vir1: Fixed dependency cycle(s) with /rkisp-vir1-sditf
+[    5.527760] platform rkisp-vir2-sditf: Fixed dependency cycle(s) with /rkvpss-vir2
+[    5.528477] platform rkvpss-vir2: Fixed dependency cycle(s) with /rkisp-vir2-sditf
+[    6.200370] reg-fixed-voltage vcc-1v8-mipi-csi: nonexclusive access to GPIO for vcc-1v8-mipi-csi
+[    6.200536] reg-fixed-voltage vcc-2v8-mipi-csi: nonexclusive access to GPIO for vcc-2v8-mipi-csi
+[    6.202107] SCSI subsystem initialized
+[    6.202339] videodev: Linux video capture interface: v2.00
+[    6.274616] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    6.275947] rockchip-csi2-dphy-hw 2b030000.csi2-dphy0-hw: csi2 dphy hw probe successfully!
+[    6.276062] rockchip-csi2-dphy-hw 2b070000.csi2-dphy1-hw: csi2 dphy hw probe successfully!
+[    6.309568] dw-mipi-dsi2 27d80000.dsi: Fixed dependency cycle(s) with /dsi@27d80000/panel@0
+[    6.309620] mipi-dsi 27d80000.dsi.0: Fixed dependency cycle(s) with /dsi@27d80000
+[    6.679477] platform csi2-dcphy0: Fixed dependency cycle(s) with /i2c@2ac70000/imx415@1a
+[    6.679553] i2c 4-001a: Fixed dependency cycle(s) with /csi2-dcphy0
+[    6.679747] platform csi2-dcphy0: Fixed dependency cycle(s) with /i2c@2ac70000/imx415-0@37
+[    6.679795] i2c 4-0037: Fixed dependency cycle(s) with /csi2-dcphy0
+[    6.680649] platform csi2-dphy0: Fixed dependency cycle(s) with /i2c@2ac80000/imx415@1a
+[    6.680720] i2c 5-001a: Fixed dependency cycle(s) with /csi2-dphy0
+[    6.680909] platform csi2-dphy0: Fixed dependency cycle(s) with /i2c@2ac80000/imx415-0@37
+[    6.680959] i2c 5-0037: Fixed dependency cycle(s) with /csi2-dphy0
+[    6.681793] platform csi2-dphy3: Fixed dependency cycle(s) with /i2c@2ac90000/imx415@1a
+[    6.681860] i2c 6-001a: Fixed dependency cycle(s) with /csi2-dphy3
+[    6.682051] platform csi2-dphy3: Fixed dependency cycle(s) with /i2c@2ac90000/imx415-0@37
+[    6.682101] i2c 6-0037: Fixed dependency cycle(s) with /csi2-dphy3
+[    6.683241] rkcifhw 27c10000.rkcif: Adding to iommu group 9
+[    6.683614] rkcifhw 27c10000.rkcif: No reserved memory region assign to CIF
+[    6.683729] rkcif rkcif-mipi-lvds: Adding to iommu group 9
+[    6.683745] rkcif rkcif-mipi-lvds: rkcif driver version: v00.02.00
+[    6.683828] rkcif rkcif-mipi-lvds: attach to cif hw node
+[    6.683834] rkcif rkcif-mipi-lvds: rkcif wait line 0
+[    6.683839] rkcif rkcif-mipi-lvds: rkcif fastboot reserve bufs num 3
+[    6.683873] : get_remote_sensor: video pad[0] is null
+[    6.683878] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.683885] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.683891] : get_remote_sensor: video pad[0] is null
+[    6.683896] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.683901] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.683907] : get_remote_sensor: video pad[0] is null
+[    6.683911] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.683916] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.683922] : get_remote_sensor: video pad[0] is null
+[    6.683927] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.683931] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.684611] rkcif rkcif-mipi-lvds: No memory-region-thunderboot specified
+[    6.684774] rkcif rkcif-mipi-lvds1: Adding to iommu group 9
+[    6.684792] rkcif rkcif-mipi-lvds1: rkcif driver version: v00.02.00
+[    6.684846] rkcif rkcif-mipi-lvds1: attach to cif hw node
+[    6.684852] rkcif rkcif-mipi-lvds1: rkcif wait line 0
+[    6.684858] rkcif rkcif-mipi-lvds1: rkcif fastboot reserve bufs num 3
+[    6.684889] : get_remote_sensor: video pad[0] is null
+[    6.684894] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.684900] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.684906] : get_remote_sensor: video pad[0] is null
+[    6.684910] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.684915] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.684921] : get_remote_sensor: video pad[0] is null
+[    6.684925] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.684930] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.684936] : get_remote_sensor: video pad[0] is null
+[    6.684940] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.684945] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.685604] rkcif rkcif-mipi-lvds1: No memory-region-thunderboot specified
+[    6.685745] rkcif rkcif-mipi-lvds3: Adding to iommu group 9
+[    6.685773] rkcif rkcif-mipi-lvds3: rkcif driver version: v00.02.00
+[    6.685826] rkcif rkcif-mipi-lvds3: attach to cif hw node
+[    6.685831] rkcif rkcif-mipi-lvds3: rkcif wait line 0
+[    6.685837] rkcif rkcif-mipi-lvds3: rkcif fastboot reserve bufs num 3
+[    6.685869] : get_remote_sensor: video pad[0] is null
+[    6.685874] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.685879] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.685886] : get_remote_sensor: video pad[0] is null
+[    6.685890] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.685895] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.685901] : get_remote_sensor: video pad[0] is null
+[    6.685905] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.685910] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.685915] : get_remote_sensor: video pad[0] is null
+[    6.685920] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    6.685924] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    6.686559] rkcif rkcif-mipi-lvds3: No memory-region-thunderboot specified
+[    6.687695] rockchip-mipi-csi2-hw 27c80000.mipi0-csi2-hw: enter mipi csi2 hw probe!
+[    6.687823] rockchip-mipi-csi2-hw 27c80000.mipi0-csi2-hw: probe success, v4l2_dev:mipi0-csi2-hw!
+[    6.687861] rockchip-mipi-csi2-hw 27c90000.mipi1-csi2-hw: enter mipi csi2 hw probe!
+[    6.687936] rockchip-mipi-csi2-hw 27c90000.mipi1-csi2-hw: probe success, v4l2_dev:mipi1-csi2-hw!
+[    6.687970] rockchip-mipi-csi2-hw 27ca0000.mipi2-csi2-hw: enter mipi csi2 hw probe!
+[    6.688038] rockchip-mipi-csi2-hw 27ca0000.mipi2-csi2-hw: probe success, v4l2_dev:mipi2-csi2-hw!
+[    6.688070] rockchip-mipi-csi2-hw 27cb0000.mipi3-csi2-hw: enter mipi csi2 hw probe!
+[    6.688136] rockchip-mipi-csi2-hw 27cb0000.mipi3-csi2-hw: probe success, v4l2_dev:mipi3-csi2-hw!
+[    6.688168] rockchip-mipi-csi2-hw 27cc0000.mipi4-csi2-hw: enter mipi csi2 hw probe!
+[    6.688235] rockchip-mipi-csi2-hw 27cc0000.mipi4-csi2-hw: probe success, v4l2_dev:mipi4-csi2-hw!
+[    6.688655] rockchip-mipi-csi2 mipi0-csi2: attach to csi2 hw node
+[    6.688687] rkcif rkcif-mipi-lvds: Entity type for entity rockchip-mipi-csi2 was not initialized!
+[    6.688695] rockchip-mipi-csi2: Async registered subdev
+[    6.688700] rockchip-mipi-csi2: probe success, v4l2_dev:rkcif-mipi-lvds!
+[    6.688925] rockchip-mipi-csi2 mipi1-csi2: attach to csi2 hw node
+[    6.688948] rkcif rkcif-mipi-lvds1: Entity type for entity rockchip-mipi-csi2 was not initialized!
+[    6.688956] rockchip-mipi-csi2: Async registered subdev
+[    6.688960] rockchip-mipi-csi2: probe success, v4l2_dev:rkcif-mipi-lvds1!
+[    6.689155] rockchip-mipi-csi2 mipi3-csi2: attach to csi2 hw node
+[    6.689178] rkcif rkcif-mipi-lvds3: Entity type for entity rockchip-mipi-csi2 was not initialized!
+[    6.689185] rockchip-mipi-csi2: Async registered subdev
+[    6.689190] rockchip-mipi-csi2: probe success, v4l2_dev:rkcif-mipi-lvds3!
+[    6.690031] rkisp_hw 27c00000.isp: Adding to iommu group 8
+[    6.690189] rkisp_hw 27c00000.isp: is_thunderboot: 0
+[    6.690197] rkisp_hw 27c00000.isp: Missing rockchip,grf property
+[    6.690219] rkisp_hw 27c00000.isp: max input:0x0@0fps
+[    6.690337] rkisp_hw 27c00000.isp: no find phandle sram
+[    6.690626] rkisp rkisp-vir0: rkisp driver version: v02.09.00
+[    6.690719] rkisp rkisp-vir0: No memory-region-thunderboot specified
+[    6.690796] rkisp rkisp-vir0: Entity type for entity rkisp-isp-subdev was not initialized!
+[    6.691420] rkisp rkisp-vir1: rkisp driver version: v02.09.00
+[    6.691477] rkisp rkisp-vir1: No memory-region-thunderboot specified
+[    6.691531] rkisp rkisp-vir1: Entity type for entity rkisp-isp-subdev was not initialized!
+[    6.692097] rkisp rkisp-vir2: rkisp driver version: v02.09.00
+[    6.692154] rkisp rkisp-vir2: No memory-region-thunderboot specified
+[    6.692210] rkisp rkisp-vir2: Entity type for entity rkisp-isp-subdev was not initialized!
+[    6.696319] usbcore: registered new interface driver uvcvideo
+[    6.804201] imx415 4-001a: driver version: 00.01.08
+[    6.804226] imx415 4-001a:  Get hdr mode failed! no hdr default
+[    6.804242] imx415 4-001a: detect imx415 lane 4
+[    6.804386] imx415 4-001a: Failed to get power-gpios
+[    6.804396] imx415 4-001a: could not get default pinstate
+[    6.804401] imx415 4-001a: could not get sleep pinstate
+[    6.875620] imx415 4-001a: Unexpected sensor id(000000), ret(-5)
+[    6.876121] imx415 4-0037: driver version: 00.01.08
+[    6.876139] imx415 4-0037:  Get hdr mode failed! no hdr default
+[    6.876155] imx415 4-0037: detect imx415 lane 4
+[    6.876198] imx415 4-0037: Failed to get power-gpios
+[    6.876206] imx415 4-0037: could not get default pinstate
+[    6.876212] imx415 4-0037: could not get sleep pinstate
+[    6.947307] imx415 4-0037: Detected imx415 id 0000e0
+[    6.948147] imx415 5-001a: driver version: 00.01.08
+[    6.948172] imx415 5-001a:  Get hdr mode failed! no hdr default
+[    6.948191] imx415 5-001a: detect imx415 lane 4
+[    6.948244] imx415 5-001a: Failed to get power-gpios
+[    6.948255] imx415 5-001a: could not get default pinstate
+[    6.948262] imx415 5-001a: could not get sleep pinstate
+[    7.017702] imx415 5-001a: Unexpected sensor id(000000), ret(-5)
+[    7.018291] imx415 5-0037: driver version: 00.01.08
+[    7.018314] imx415 5-0037:  Get hdr mode failed! no hdr default
+[    7.018332] imx415 5-0037: detect imx415 lane 4
+[    7.018382] imx415 5-0037: Failed to get power-gpios
+[    7.018393] imx415 5-0037: could not get default pinstate
+[    7.018400] imx415 5-0037: could not get sleep pinstate
+[    7.089234] imx415 5-0037: Unexpected sensor id(000000), ret(-5)
+[    7.089834] imx415 6-001a: driver version: 00.01.08
+[    7.089854] imx415 6-001a:  Get hdr mode failed! no hdr default
+[    7.089870] imx415 6-001a: detect imx415 lane 4
+[    7.089916] imx415 6-001a: Failed to get power-gpios
+[    7.089924] imx415 6-001a: could not get default pinstate
+[    7.089930] imx415 6-001a: could not get sleep pinstate
+[    7.161406] imx415 6-001a: Unexpected sensor id(000000), ret(-5)
+[    7.162317] imx415 6-0037: driver version: 00.01.08
+[    7.162381] imx415 6-0037:  Get hdr mode failed! no hdr default
+[    7.162419] imx415 6-0037: detect imx415 lane 4
+[    7.162524] imx415 6-0037: Failed to get power-gpios
+[    7.162548] imx415 6-0037: could not get default pinstate
+[    7.162566] imx415 6-0037: could not get sleep pinstate
+[    7.234328] imx415 6-0037: Unexpected sensor id(000000), ret(-5)
+[    7.272429] imx415 4-0037: Consider updating driver imx415 to match on endpoints
+[    7.272473] rockchip-csi2-dphy csi2-dcphy0: dphy0 matches m00_b_imx415 4-0037:bus type 5
+[    7.272486] rockchip-csi2-dphy csi2-dcphy0: csi2 dphy0 probe successfully!
+[    7.272990] rockchip-csi2-dphy csi2-dphy0: csi2 dphy0 probe successfully!
+[    7.273439] rockchip-csi2-dphy csi2-dphy3: csi2 dphy3 probe successfully!
+[    7.277294] mpp_rkvdec2 27b00100.rkvdec: shared_video_cabac is not found!
+[    7.285085] rockchip-drm display-subsystem: bound 27d00000.vop (ops 0xffffffc0097dc258)
+[    7.287133] rockchip-drm display-subsystem: bound 27da0000.hdmi (ops 0xffffffc0097f54f0)
+[    7.287306] rockchip-drm display-subsystem: bound 27d80000.dsi (ops 0xffffffc0097f7ea8)
+[    7.287849] rockchip-drm display-subsystem: bound 27e40000.dp (ops 0xffffffc0097f8500)
+[    7.291243] [drm] Initialized rockchip 4.0.0 20140818 for display-subsystem on minor 0
+[    7.292011] rockchip-drm display-subsystem: route-hdmi: failed to get logo,offset
+[    7.292029] rockchip-drm display-subsystem: route-dp0: failed to get logo,offset
+[    7.304161] rockchip-drm display-subsystem: [drm] run display error_event monitor
+[    7.328807] rockchip-dmc dmc: video_4k_rate = 1968000000
+[    7.328814] rockchip-dmc dmc: video_4k_10b_rate = 1968000000
+[    7.328821] rockchip-dmc dmc: video_svep_rate = 1968000000
+[    7.328833] rockchip-dmc dmc: fixed_rate(isp|cif0|cif1|dualview) = 2736000000
+[    7.347729] rkcif rkcif-mipi-lvds: clear unready subdev num: 1
+[    7.348653] rkcif-mipi-lvds: Async subdev notifier completed
+[    7.349140] rkisp-vir0: Async subdev notifier completed
+[    7.349156] rkcif rkcif-mipi-lvds1: clear unready subdev num: 2
+[    7.349524] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    7.349538] rkcif-mipi-lvds1: Async subdev notifier completed
+[    7.349550] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    7.349557] rkcif-mipi-lvds1: There is not terminal subdev, not synchronized with ISP
+[    7.349566] rkcif rkcif-mipi-lvds3: clear unready subdev num: 2
+[    7.349818] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    7.349831] rkcif-mipi-lvds3: Async subdev notifier completed
+[    7.349843] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    7.349850] rkcif-mipi-lvds3: There is not terminal subdev, not synchronized with ISP
+[    7.349933] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    7.349942] rkcif-mipi-lvds3: There is not terminal subdev, not synchronized with ISP
+[    7.349973] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    7.349982] rkcif-mipi-lvds1: There is not terminal subdev, not synchronized with ISP
+[    7.371444] rkisp rkisp-vir0: clear unready subdev num: 0
+[    7.371456] rkisp rkisp-vir1: clear unready subdev num: 1
+[    7.371831] rkisp-vir1: Async subdev notifier completed
+[    7.371843] rkisp rkisp-vir2: clear unready subdev num: 1
+[    7.372075] rkisp-vir2: Async subdev notifier completed
+[    8.038034] systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[    8.105127] systemd[1]: Starting rkaiq_3A.service - Enable Rockchip camera engine rkaiq...
+[    8.139427] systemd[1]: Started rkaiq_3A.service - Enable Rockchip camera engine rkaiq.
+[    8.378534] rkisp-vir2: nonsupport pixelformat:\xff\xff\xff\xff
+[    8.378571] rkisp-vir2: nonsupport pixelformat:\xff\xff\xff\xff
+[    8.378711] rkisp-vir2: nonsupport pixelformat:\xff\xff\xff\xff
+[    8.378725] rkisp-vir2: nonsupport pixelformat:\xff\xff\xff\xff
+[    8.381454] rkisp rkisp-vir2: first params buf queue
+[    8.786288] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    8.786342] stream_cif_mipi_id0: update sensor info failed -19
+[    8.788936] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[    8.789007] stream_cif_mipi_id1: update sensor info failed -19
+[    8.791642] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[    8.791711] rkcif_scale_ch1: update sensor info failed -19
+[    8.793859] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[    8.793928] stream_cif_mipi_id2: update sensor info failed -19
+[    8.794927] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    8.794960] stream_cif_mipi_id0: update sensor info failed -19
+[    8.796317] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[    8.796334] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    8.796342] stream_cif_mipi_id3: update sensor info failed -19
+[    8.796358] rkcif_scale_ch0: update sensor info failed -19
+[    8.798396] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    8.798435] rkcif_tools_id0: update sensor info failed -19
+[    8.798802] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[    8.798877] rkcif_scale_ch3: update sensor info failed -19
+[    8.799120] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[    8.799140] rkcif_tools_id1: update sensor info failed -19
+[    8.800908] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[    8.800916] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[    8.800923] stream_cif_mipi_id3: update sensor info failed -19
+[    8.800945] rkcif_scale_ch2: update sensor info failed -19
+[    8.807771] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[    8.807845] rkcif_tools_id2: update sensor info failed -19
+[    8.809571] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    8.809609] rkcif_tools_id0: update sensor info failed -19
+[    8.810368] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[    8.810372] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[    8.810378] stream_cif_mipi_id1: update sensor info failed -19
+[    8.810383] rkcif_tools_id2: update sensor info failed -19
+[    8.810393] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[    8.810410] rkcif_scale_ch3: update sensor info failed -19
+[    8.814906] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[    8.814927] stream_cif_mipi_id2: update sensor info failed -19
+[    8.815853] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[    8.815889] rkcif_scale_ch1: update sensor info failed -19
+[    8.822411] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[    8.822464] rkcif_scale_ch2: update sensor info failed -19
+[    8.823747] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    8.823770] rkcif_scale_ch0: update sensor info failed -19
+[    8.829431] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[    8.829487] rkcif_tools_id1: update sensor info failed -19
+[    9.035077] imx415 4-0037: set exposure(shr0) 2047 = cur_vts(2250) - val(203)
+[    9.045188] rkisp rkisp-vir0: first params buf queue
+[   13.625897] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   13.625963] stream_cif_mipi_id0: update sensor info failed -19
+[   13.626232] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   13.626249] stream_cif_mipi_id1: update sensor info failed -19
+[   13.626359] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   13.626371] stream_cif_mipi_id2: update sensor info failed -19
+[   13.626481] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[   13.626493] stream_cif_mipi_id3: update sensor info failed -19
+[   13.626591] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   13.626604] rkcif_scale_ch0: update sensor info failed -19
+[   13.626700] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   13.626711] rkcif_scale_ch1: update sensor info failed -19
+[   13.626805] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   13.626816] rkcif_scale_ch2: update sensor info failed -19
+[   13.626977] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[   13.626992] rkcif_scale_ch3: update sensor info failed -19
+[   13.627127] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   13.627143] rkcif_tools_id0: update sensor info failed -19
+[   13.627275] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   13.627287] rkcif_tools_id1: update sensor info failed -19
+[   13.627380] rkcif-mipi-lvds1: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   13.627391] rkcif_tools_id2: update sensor info failed -19
+[   13.627526] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   13.627538] stream_cif_mipi_id0: update sensor info failed -19
+[   13.627631] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   13.627643] stream_cif_mipi_id1: update sensor info failed -19
+[   13.627728] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   13.627740] stream_cif_mipi_id2: update sensor info failed -19
+[   13.627828] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[   13.627839] stream_cif_mipi_id3: update sensor info failed -19
+[   13.627938] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   13.627950] rkcif_scale_ch0: update sensor info failed -19
+[   13.628039] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   13.628050] rkcif_scale_ch1: update sensor info failed -19
+[   13.628286] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   13.628302] rkcif_scale_ch2: update sensor info failed -19
+[   13.628414] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[   13.628426] rkcif_scale_ch3: update sensor info failed -19
+[   13.628521] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   13.628531] rkcif_tools_id0: update sensor info failed -19
+[   13.628618] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   13.628629] rkcif_tools_id1: update sensor info failed -19
+[   13.628715] rkcif-mipi-lvds3: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   13.628726] rkcif_tools_id2: update sensor info failed -19
