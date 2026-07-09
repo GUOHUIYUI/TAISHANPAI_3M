@@ -1,0 +1,1049 @@
+===== /dev/media0 =====
+driver          rkcif
+model           rkcif-mipi-lvds
+bus info        platform:rkcif-mipi-lvds
+driver version  6.1.99
+- entity 1: stream_cif_mipi_id0 (1 pad, 11 links)
+            device node name /dev/video0
+		<- "rockchip-mipi-csi2":1 [ENABLED]
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 5: stream_cif_mipi_id1 (1 pad, 11 links)
+            device node name /dev/video1
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 [ENABLED]
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 9: stream_cif_mipi_id2 (1 pad, 11 links)
+            device node name /dev/video2
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 [ENABLED]
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 13: stream_cif_mipi_id3 (1 pad, 11 links)
+             device node name /dev/video3
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 [ENABLED]
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 17: rkcif_scale_ch0 (1 pad, 11 links)
+             device node name /dev/video4
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 [ENABLED]
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 21: rkcif_scale_ch1 (1 pad, 11 links)
+             device node name /dev/video5
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 [ENABLED]
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 25: rkcif_scale_ch2 (1 pad, 11 links)
+             device node name /dev/video6
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 [ENABLED]
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 29: rkcif_scale_ch3 (1 pad, 11 links)
+             device node name /dev/video7
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 [ENABLED]
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 33: rkcif_tools_id0 (1 pad, 11 links)
+             device node name /dev/video8
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 [ENABLED]
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 37: rkcif_tools_id1 (1 pad, 11 links)
+             device node name /dev/video9
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 [ENABLED]
+		<- "rockchip-mipi-csi2":11 []
+- entity 41: rkcif_tools_id2 (1 pad, 11 links)
+             device node name /dev/video10
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 [ENABLED]
+- entity 45: rockchip-mipi-csi2 (12 pads, 122 links)
+             device node name /dev/v4l-subdev3
+		<- "rockchip-csi2-dphy0":1 [ENABLED]
+		-> "stream_cif_mipi_id0":0 [ENABLED]
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 [ENABLED]
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 [ENABLED]
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 [ENABLED]
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 [ENABLED]
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 [ENABLED]
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 [ENABLED]
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 [ENABLED]
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 [ENABLED]
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 [ENABLED]
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 [ENABLED]
+- entity 58: rockchip-csi2-dphy0 (2 pads, 1 link)
+             device node name /dev/v4l-subdev4
+		-> "rockchip-mipi-csi2":0 [ENABLED]
+
+===== /dev/media1 =====
+driver          rkcif
+model           rkcif-mipi-lvds1
+bus info        platform:rkcif-mipi-lvds1
+driver version  6.1.99
+- entity 1: stream_cif_mipi_id0 (1 pad, 11 links)
+            device node name /dev/video11
+		<- "rockchip-mipi-csi2":1 [ENABLED]
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 5: stream_cif_mipi_id1 (1 pad, 11 links)
+            device node name /dev/video12
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 [ENABLED]
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 9: stream_cif_mipi_id2 (1 pad, 11 links)
+            device node name /dev/video13
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 [ENABLED]
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 13: stream_cif_mipi_id3 (1 pad, 11 links)
+             device node name /dev/video14
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 [ENABLED]
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 17: rkcif_scale_ch0 (1 pad, 11 links)
+             device node name /dev/video15
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 [ENABLED]
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 21: rkcif_scale_ch1 (1 pad, 11 links)
+             device node name /dev/video16
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 [ENABLED]
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 25: rkcif_scale_ch2 (1 pad, 11 links)
+             device node name /dev/video17
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 [ENABLED]
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 29: rkcif_scale_ch3 (1 pad, 11 links)
+             device node name /dev/video18
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 [ENABLED]
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 33: rkcif_tools_id0 (1 pad, 11 links)
+             device node name /dev/video19
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 [ENABLED]
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 37: rkcif_tools_id1 (1 pad, 11 links)
+             device node name /dev/video20
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 [ENABLED]
+		<- "rockchip-mipi-csi2":11 []
+- entity 41: rkcif_tools_id2 (1 pad, 11 links)
+             device node name /dev/video21
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 [ENABLED]
+- entity 45: rockchip-mipi-csi2 (12 pads, 122 links)
+             device node name /dev/v4l-subdev5
+		<- "rockchip-csi2-dphy0":1 [ENABLED]
+		-> "stream_cif_mipi_id0":0 [ENABLED]
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 [ENABLED]
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 [ENABLED]
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 [ENABLED]
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 [ENABLED]
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 [ENABLED]
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 [ENABLED]
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 [ENABLED]
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 [ENABLED]
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 [ENABLED]
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 [ENABLED]
+- entity 58: rockchip-csi2-dphy0 (2 pads, 2 links)
+             device node name /dev/v4l-subdev6
+		<- "m00_b_imx415 5-0037":0 [ENABLED]
+		-> "rockchip-mipi-csi2":0 [ENABLED]
+- entity 63: m00_b_imx415 5-0037 (1 pad, 1 link)
+             device node name /dev/v4l-subdev7
+		-> "rockchip-csi2-dphy0":0 [ENABLED]
+
+===== /dev/media2 =====
+driver          rkcif
+model           rkcif-mipi-lvds3
+bus info        platform:rkcif-mipi-lvds3
+driver version  6.1.99
+- entity 1: stream_cif_mipi_id0 (1 pad, 11 links)
+            device node name /dev/video22
+		<- "rockchip-mipi-csi2":1 [ENABLED]
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 5: stream_cif_mipi_id1 (1 pad, 11 links)
+            device node name /dev/video23
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 [ENABLED]
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 9: stream_cif_mipi_id2 (1 pad, 11 links)
+            device node name /dev/video24
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 [ENABLED]
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 13: stream_cif_mipi_id3 (1 pad, 11 links)
+             device node name /dev/video25
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 [ENABLED]
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 17: rkcif_scale_ch0 (1 pad, 11 links)
+             device node name /dev/video26
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 [ENABLED]
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 21: rkcif_scale_ch1 (1 pad, 11 links)
+             device node name /dev/video27
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 [ENABLED]
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 25: rkcif_scale_ch2 (1 pad, 11 links)
+             device node name /dev/video28
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 [ENABLED]
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 29: rkcif_scale_ch3 (1 pad, 11 links)
+             device node name /dev/video29
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 [ENABLED]
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 33: rkcif_tools_id0 (1 pad, 11 links)
+             device node name /dev/video30
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 [ENABLED]
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 []
+- entity 37: rkcif_tools_id1 (1 pad, 11 links)
+             device node name /dev/video31
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 [ENABLED]
+		<- "rockchip-mipi-csi2":11 []
+- entity 41: rkcif_tools_id2 (1 pad, 11 links)
+             device node name /dev/video32
+		<- "rockchip-mipi-csi2":1 []
+		<- "rockchip-mipi-csi2":2 []
+		<- "rockchip-mipi-csi2":3 []
+		<- "rockchip-mipi-csi2":4 []
+		<- "rockchip-mipi-csi2":5 []
+		<- "rockchip-mipi-csi2":6 []
+		<- "rockchip-mipi-csi2":7 []
+		<- "rockchip-mipi-csi2":8 []
+		<- "rockchip-mipi-csi2":9 []
+		<- "rockchip-mipi-csi2":10 []
+		<- "rockchip-mipi-csi2":11 [ENABLED]
+- entity 45: rockchip-mipi-csi2 (12 pads, 122 links)
+             device node name /dev/v4l-subdev10
+		<- "rockchip-csi2-dphy3":1 [ENABLED]
+		-> "stream_cif_mipi_id0":0 [ENABLED]
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 [ENABLED]
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 [ENABLED]
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 [ENABLED]
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 [ENABLED]
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 [ENABLED]
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 [ENABLED]
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 [ENABLED]
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 [ENABLED]
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 [ENABLED]
+		-> "rkcif_tools_id2":0 []
+		-> "stream_cif_mipi_id0":0 []
+		-> "stream_cif_mipi_id1":0 []
+		-> "stream_cif_mipi_id2":0 []
+		-> "stream_cif_mipi_id3":0 []
+		-> "rkcif_scale_ch0":0 []
+		-> "rkcif_scale_ch1":0 []
+		-> "rkcif_scale_ch2":0 []
+		-> "rkcif_scale_ch3":0 []
+		-> "rkcif_tools_id0":0 []
+		-> "rkcif_tools_id1":0 []
+		-> "rkcif_tools_id2":0 [ENABLED]
+- entity 58: rockchip-csi2-dphy3 (2 pads, 1 link)
+             device node name /dev/v4l-subdev11
+		-> "rockchip-mipi-csi2":0 [ENABLED]
+
+===== /dev/media3 =====
+driver          rkisp-vir0
+model           rkisp0
+bus info        platform:rkisp-vir0
+driver version  6.1.99
+- entity 1: rkisp-isp-subdev (4 pads, 9 links)
+            device node name /dev/v4l-subdev12
+		<- "rkisp_rawrd0_m":0 []
+		<- "rkisp_rawrd2_s":0 []
+		<- "rkisp-input-params":0 [ENABLED]
+		-> "rkisp_mainpath":0 [ENABLED]
+		-> "rkisp_selfpath":0 [ENABLED]
+		-> "rkisp_ldcpath":0 []
+		-> "rkisp_iqtool":0 [ENABLED]
+		-> "rkisp-statistics":0 [ENABLED]
+		-> "rkisp-pdaf":0 [ENABLED]
+- entity 6: rkisp_mainpath (1 pad, 1 link)
+            device node name /dev/video33
+		<- "rkisp-isp-subdev":2 [ENABLED]
+- entity 12: rkisp_selfpath (1 pad, 1 link)
+             device node name /dev/video34
+		<- "rkisp-isp-subdev":2 [ENABLED]
+- entity 18: rkisp_ldcpath (1 pad, 1 link)
+             device node name /dev/video35
+		<- "rkisp-isp-subdev":2 []
+- entity 24: rkisp_iqtool (1 pad, 1 link)
+             device node name /dev/video36
+		<- "rkisp-isp-subdev":2 [ENABLED]
+- entity 30: rkisp_rawrd0_m (1 pad, 1 link)
+             device node name /dev/video37
+		-> "rkisp-isp-subdev":0 []
+- entity 36: rkisp_rawrd2_s (1 pad, 1 link)
+             device node name /dev/video38
+		-> "rkisp-isp-subdev":0 []
+- entity 42: rkisp-statistics (1 pad, 1 link)
+             device node name /dev/video39
+		<- "rkisp-isp-subdev":3 [ENABLED]
+- entity 48: rkisp-input-params (1 pad, 1 link)
+             device node name /dev/video40
+		-> "rkisp-isp-subdev":1 [ENABLED]
+- entity 54: rkisp-pdaf (1 pad, 1 link)
+             device node name /dev/video41
+		<- "rkisp-isp-subdev":3 [ENABLED]
+
+===== /dev/media4 =====
+driver          rkisp-vir1
+model           rkisp1
+bus info        platform:rkisp-vir1
+driver version  6.1.99
+- entity 1: rkisp-isp-subdev (4 pads, 10 links)
+            device node name /dev/v4l-subdev8
+		<- "rkisp_rawrd0_m":0 []
+		<- "rkisp_rawrd2_s":0 [ENABLED]
+		<- "rkcif-mipi-lvds1":0 [ENABLED]
+		<- "rkisp-input-params":0 [ENABLED]
+		-> "rkisp_mainpath":0 [ENABLED]
+		-> "rkisp_selfpath":0 [ENABLED]
+		-> "rkisp_ldcpath":0 []
+		-> "rkisp_iqtool":0 [ENABLED]
+		-> "rkisp-statistics":0 [ENABLED]
+		-> "rkisp-pdaf":0 [ENABLED]
+- entity 6: rkisp_mainpath (1 pad, 1 link)
+            device node name /dev/video42
+		<- "rkisp-isp-subdev":2 [ENABLED]
+- entity 12: rkisp_selfpath (1 pad, 1 link)
+             device node name /dev/video43
+		<- "rkisp-isp-subdev":2 [ENABLED]
+- entity 18: rkisp_ldcpath (1 pad, 1 link)
+             device node name /dev/video44
+		<- "rkisp-isp-subdev":2 []
+- entity 24: rkisp_iqtool (1 pad, 1 link)
+             device node name /dev/video45
+		<- "rkisp-isp-subdev":2 [ENABLED]
+- entity 30: rkisp_rawrd0_m (1 pad, 1 link)
+             device node name /dev/video46
+		-> "rkisp-isp-subdev":0 []
+- entity 36: rkisp_rawrd2_s (1 pad, 1 link)
+             device node name /dev/video47
+		-> "rkisp-isp-subdev":0 [ENABLED]
+- entity 42: rkisp-statistics (1 pad, 1 link)
+             device node name /dev/video48
+		<- "rkisp-isp-subdev":3 [ENABLED]
+- entity 48: rkisp-input-params (1 pad, 1 link)
+             device node name /dev/video49
+		-> "rkisp-isp-subdev":1 [ENABLED]
+- entity 54: rkisp-pdaf (1 pad, 1 link)
+             device node name /dev/video50
+		<- "rkisp-isp-subdev":3 [ENABLED]
+- entity 60: rkcif-mipi-lvds1 (1 pad, 1 link)
+             device node name /dev/v4l-subdev9
+		-> "rkisp-isp-subdev":0 [ENABLED]
+
+===== /dev/media5 =====
+driver          rkisp-vir2
+model           rkisp2
+bus info        platform:rkisp-vir2
+driver version  6.1.99
+- entity 1: rkisp-isp-subdev (4 pads, 9 links)
+            device node name /dev/v4l-subdev13
+		<- "rkisp_rawrd0_m":0 []
+		<- "rkisp_rawrd2_s":0 [ENABLED]
+		<- "rkisp-input-params":0 [ENABLED]
+		-> "rkisp_mainpath":0 [ENABLED]
+		-> "rkisp_selfpath":0 [ENABLED]
+		-> "rkisp_ldcpath":0 []
+		-> "rkisp_iqtool":0 [ENABLED]
+		-> "rkisp-statistics":0 [ENABLED]
+		-> "rkisp-pdaf":0 [ENABLED]
+- entity 6: rkisp_mainpath (1 pad, 1 link)
+            device node name /dev/video51
+		<- "rkisp-isp-subdev":2 [ENABLED]
+- entity 12: rkisp_selfpath (1 pad, 1 link)
+             device node name /dev/video52
+		<- "rkisp-isp-subdev":2 [ENABLED]
+- entity 18: rkisp_ldcpath (1 pad, 1 link)
+             device node name /dev/video53
+		<- "rkisp-isp-subdev":2 []
+- entity 24: rkisp_iqtool (1 pad, 1 link)
+             device node name /dev/video54
+		<- "rkisp-isp-subdev":2 [ENABLED]
+- entity 30: rkisp_rawrd0_m (1 pad, 1 link)
+             device node name /dev/video55
+		-> "rkisp-isp-subdev":0 []
+- entity 36: rkisp_rawrd2_s (1 pad, 1 link)
+             device node name /dev/video56
+		-> "rkisp-isp-subdev":0 [ENABLED]
+- entity 42: rkisp-statistics (1 pad, 1 link)
+             device node name /dev/video57
+		<- "rkisp-isp-subdev":3 [ENABLED]
+- entity 48: rkisp-input-params (1 pad, 1 link)
+             device node name /dev/video58
+		-> "rkisp-isp-subdev":1 [ENABLED]
+- entity 54: rkisp-pdaf (1 pad, 1 link)
+             device node name /dev/video59
+		<- "rkisp-isp-subdev":3 [ENABLED]
+
+===== /dev/media6 =====
+driver          rkvpss-vir0
+model           rkvpss0
+bus info        platform:rkvpss-vir0
+driver version  6.1.99
+- entity 1: rkvpss-subdev (2 pads, 5 links)
+		<- "rkisp-vir0-sditf":0 [ENABLED]
+		-> "rkvpss_scale0":0 [ENABLED]
+		-> "rkvpss_scale1":0 [ENABLED]
+		-> "rkvpss_scale2":0 [ENABLED]
+		-> "rkvpss_scale3":0 [ENABLED]
+- entity 4: rkvpss_scale0 (1 pad, 1 link)
+            device node name /dev/video61
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 8: rkvpss_scale1 (1 pad, 1 link)
+            device node name /dev/video62
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 12: rkvpss_scale2 (1 pad, 1 link)
+             device node name /dev/video63
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 16: rkvpss_scale3 (1 pad, 1 link)
+             device node name /dev/video64
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 20: rkisp-vir0-sditf (1 pad, 1 link)
+             device node name /dev/v4l-subdev0
+		-> "rkvpss-subdev":0 [ENABLED]
+
+===== /dev/media7 =====
+driver          rkvpss-vir1
+model           rkvpss1
+bus info        platform:rkvpss-vir1
+driver version  6.1.99
+- entity 1: rkvpss-subdev (2 pads, 5 links)
+		<- "rkisp-vir1-sditf":0 [ENABLED]
+		-> "rkvpss_scale0":0 [ENABLED]
+		-> "rkvpss_scale1":0 [ENABLED]
+		-> "rkvpss_scale2":0 [ENABLED]
+		-> "rkvpss_scale3":0 [ENABLED]
+- entity 4: rkvpss_scale0 (1 pad, 1 link)
+            device node name /dev/video65
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 8: rkvpss_scale1 (1 pad, 1 link)
+            device node name /dev/video66
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 12: rkvpss_scale2 (1 pad, 1 link)
+             device node name /dev/video67
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 16: rkvpss_scale3 (1 pad, 1 link)
+             device node name /dev/video68
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 20: rkisp-vir1-sditf (1 pad, 1 link)
+             device node name /dev/v4l-subdev1
+		-> "rkvpss-subdev":0 [ENABLED]
+
+===== /dev/media8 =====
+driver          rkvpss-vir2
+model           rkvpss2
+bus info        platform:rkvpss-vir2
+driver version  6.1.99
+- entity 1: rkvpss-subdev (2 pads, 5 links)
+		<- "rkisp-vir2-sditf":0 [ENABLED]
+		-> "rkvpss_scale0":0 [ENABLED]
+		-> "rkvpss_scale1":0 [ENABLED]
+		-> "rkvpss_scale2":0 [ENABLED]
+		-> "rkvpss_scale3":0 [ENABLED]
+- entity 4: rkvpss_scale0 (1 pad, 1 link)
+            device node name /dev/video69
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 8: rkvpss_scale1 (1 pad, 1 link)
+            device node name /dev/video70
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 12: rkvpss_scale2 (1 pad, 1 link)
+             device node name /dev/video71
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 16: rkvpss_scale3 (1 pad, 1 link)
+             device node name /dev/video72
+		<- "rkvpss-subdev":1 [ENABLED]
+- entity 20: rkisp-vir2-sditf (1 pad, 1 link)
+             device node name /dev/v4l-subdev2
+		-> "rkvpss-subdev":0 [ENABLED]
+

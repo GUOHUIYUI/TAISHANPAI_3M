@@ -1,1 +1,13 @@
-Failed to open /dev/video11: No such device
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'RG10' (10-bit Bayer RGRG/GBGB)
+		Size: Stepwise 64x64 - 3864x2192 with step 8/8
+	[1]: 'BA10' (10-bit Bayer GRGR/BGBG)
+		Size: Stepwise 64x64 - 3864x2192 with step 8/8
+	[2]: 'GB10' (10-bit Bayer GBGB/RGRG)
+		Size: Stepwise 64x64 - 3864x2192 with step 8/8
+	[3]: 'BG10' (10-bit Bayer BGBG/GRGR)
+		Size: Stepwise 64x64 - 3864x2192 with step 8/8
+	[4]: 'Y10 ' (10-bit Greyscale)
+		Size: Stepwise 64x64 - 3864x2192 with step 8/8

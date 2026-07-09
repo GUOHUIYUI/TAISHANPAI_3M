@@ -15,7 +15,7 @@ Driver Info:
 Media Driver Info:
 	Driver name      : rkisp-vir0
 	Model            : rkisp0
-	Serial           : 
+	Serial           :
 	Bus info         : platform:rkisp-vir0
 	Media version    : 6.1.99
 	Hardware revision: 0x00000000 (0)
@@ -31,19 +31,15 @@ Entity Info:
 	  Link 0x02000022: to remote pad 0x1000002 of entity 'rkisp-isp-subdev' (Unknown V4L2 Sub-Device): Data
 Priority: 2
 Format Video Output Multiplanar:
-	Width/Height      : 3840/2160
-	Pixel Format      : 'GB10' (10-bit Bayer GBGB/RGRG)
+	Width/Height      : 800/600
+	Pixel Format      : 'RGGB' (8-bit Bayer RGRG/GBGB)
 	Field             : None
 	Number of planes  : 1
-	Flags             : 
+	Flags             :
 	Colorspace        : Default
 	Transfer Function : Default
 	YCbCr/HSV Encoding: Default
 	Quantization      : Full Range
 	Plane 0           :
-	   Bytes per Line : 4864
-	   Size Image     : 10506240
-
-Image Processing Controls
-
-                     pixel_rate 0x009f0902 (int64)  : min=0 max=1000000000 step=1 default=1000000000 value=356800000 flags=read-only, volatile
+	   Bytes per Line : 1024
+	   Size Image     : 614400

@@ -1,0 +1,53 @@
+Media controller API version 6.1.99
+
+Media device information
+------------------------
+driver          rkvpss-vir1
+model           rkvpss1
+serial
+bus info        platform:rkvpss-vir1
+hw revision     0x0
+driver version  6.1.99
+
+Device topology
+- entity 1: rkvpss-subdev (2 pads, 5 links)
+            type V4L2 subdev subtype Unknown flags 0
+	pad0: Sink
+		<- "rkisp-vir1-sditf":0 [ENABLED]
+	pad1: Source
+		-> "rkvpss_scale0":0 [ENABLED]
+		-> "rkvpss_scale1":0 [ENABLED]
+		-> "rkvpss_scale2":0 [ENABLED]
+		-> "rkvpss_scale3":0 [ENABLED]
+
+- entity 4: rkvpss_scale0 (1 pad, 1 link)
+            type Node subtype V4L flags 0
+            device node name /dev/video65
+	pad0: Sink
+		<- "rkvpss-subdev":1 [ENABLED]
+
+- entity 8: rkvpss_scale1 (1 pad, 1 link)
+            type Node subtype V4L flags 0
+            device node name /dev/video66
+	pad0: Sink
+		<- "rkvpss-subdev":1 [ENABLED]
+
+- entity 12: rkvpss_scale2 (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video67
+	pad0: Sink
+		<- "rkvpss-subdev":1 [ENABLED]
+
+- entity 16: rkvpss_scale3 (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video68
+	pad0: Sink
+		<- "rkvpss-subdev":1 [ENABLED]
+
+- entity 20: rkisp-vir1-sditf (1 pad, 1 link)
+             type V4L2 subdev subtype Unknown flags 0
+             device node name /dev/v4l-subdev1
+	pad0: Source
+		[fmt:YUYV8_2X8/3840x2160 field:none colorspace:smpte170m quantization:full-range]
+		-> "rkvpss-subdev":0 [ENABLED]
+

@@ -15,7 +15,7 @@ Driver Info:
 Media Driver Info:
 	Driver name      : rkisp-vir1
 	Model            : rkisp1
-	Serial           : 
+	Serial           :
 	Bus info         : platform:rkisp-vir1
 	Media version    : 6.1.99
 	Hardware revision: 0x00000000 (0)
@@ -33,3 +33,7 @@ Priority: 2
 Format Metadata Output:
 	Sample Format   : 'RK1P' (Rockchip ISP1 3A Parameters)
 	Buffer Size     : 13827
+
+Image Processing Controls
+
+                     pixel_rate 0x009f0902 (int64)  : min=0 max=1000000000 step=1 default=1000000000 value=356800000 flags=read-only, volatile

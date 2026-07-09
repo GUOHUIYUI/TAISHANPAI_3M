@@ -1,1 +1,59 @@
-Failed to open /dev/video13: No such device
+Driver Info:
+	Driver name      : rkcif
+	Card type        : rkcif
+	Bus info         : platform:rkcif-mipi-lvds1
+	Driver version   : 6.1.99
+	Capabilities     : 0x84201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkcif
+	Model            : rkcif-mipi-lvds1
+	Serial           :
+	Bus info         : platform:rkcif-mipi-lvds1
+	Media version    : 6.1.99
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.99
+Interface Info:
+	ID               : 0x0300000a
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x00000009 (9)
+	Name             : stream_cif_mipi_id2
+	Function         : V4L2 I/O
+	Pad 0x0100000c   : 0: Sink
+	  Link 0x02000047: from remote pad 0x100002f of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x0200005d: from remote pad 0x1000030 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x02000073: from remote pad 0x1000031 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data, Enabled
+	  Link 0x02000089: from remote pad 0x1000032 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x0200009f: from remote pad 0x1000033 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x020000b5: from remote pad 0x1000034 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x020000cb: from remote pad 0x1000035 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x020000e1: from remote pad 0x1000036 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x020000f7: from remote pad 0x1000037 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x0200010d: from remote pad 0x1000038 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+	  Link 0x02000123: from remote pad 0x1000039 of entity 'rockchip-mipi-csi2' (Unknown V4L2 Sub-Device): Data
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 64/64
+	Pixel Format      : 'RG10' (10-bit Bayer RGRG/GBGB)
+	Field             : None
+	Number of planes  : 1
+	Flags             :
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 4864
+	   Size Image     : 10506240
+Selection Video Capture: crop, Left 12, Top 16, Width 3840, Height 2160, Flags:
+Selection Video Capture: crop_bounds, Left 12, Top 16, Width 3840, Height 2160, Flags:
+Selection Video Output: crop, Left 12, Top 16, Width 3840, Height 2160, Flags:
+Selection Video Output: crop_bounds, Left 12, Top 16, Width 3840, Height 2160, Flags:

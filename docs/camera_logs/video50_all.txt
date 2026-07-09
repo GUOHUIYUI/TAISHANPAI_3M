@@ -15,7 +15,7 @@ Driver Info:
 Media Driver Info:
 	Driver name      : rkisp-vir1
 	Model            : rkisp1
-	Serial           : 
+	Serial           :
 	Bus info         : platform:rkisp-vir1
 	Media version    : 6.1.99
 	Hardware revision: 0x00000000 (0)
@@ -35,8 +35,12 @@ Format Video Capture Multiplanar:
 	Pixel Format      : ''
 	Field             : Any
 	Number of planes  : 0
-	Flags             : 
+	Flags             :
 	Colorspace        : Default
 	Transfer Function : Default
 	YCbCr/HSV Encoding: Default
 	Quantization      : Default
+
+Image Processing Controls
+
+                     pixel_rate 0x009f0902 (int64)  : min=0 max=1000000000 step=1 default=1000000000 value=356800000 flags=read-only, volatile

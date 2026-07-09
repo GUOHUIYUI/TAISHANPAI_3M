@@ -15,7 +15,7 @@ Driver Info:
 Media Driver Info:
 	Driver name      : rkisp-vir2
 	Model            : rkisp2
-	Serial           : 
+	Serial           :
 	Bus info         : platform:rkisp-vir2
 	Media version    : 6.1.99
 	Hardware revision: 0x00000000 (0)
