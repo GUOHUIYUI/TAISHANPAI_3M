@@ -80,6 +80,6 @@ crw-rw----+ 1 root video  81, 73 Jun 26 22:58 /dev/video71
 crw-rw----+ 1 root video  81, 74 Jun 26 22:58 /dev/video72
 crw-rw----+ 1 root video  81,  8 Jun 26 22:58 /dev/video8
 crw-rw----+ 1 root video  81,  9 Jun 26 22:58 /dev/video9
-lrwxrwxrwx  1 root root        7 Jun 26 22:58 /dev/video-camera0 -> video33
+lrwxrwxrwx  1 root root        7 Jun 26 22:58 /dev/video-camera0 -> video51
 -rw-rw----  1 root video       4 Jun 26 22:58 /dev/video-dec0
 -rw-rw----  1 root video       4 Jun 26 22:58 /dev/video-enc0

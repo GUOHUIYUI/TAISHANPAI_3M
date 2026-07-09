@@ -1,1 +1,159 @@
-Failed to open /dev/video21: No such device
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'RGGB' (8-bit Bayer RGRG/GBGB)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[1]: 'GRBG' (8-bit Bayer GRGR/BGBG)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[2]: 'GBRG' (8-bit Bayer GBGB/RGRG)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[3]: 'BA81' (8-bit Bayer BGBG/GRGR)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[4]: 'RG10' (10-bit Bayer RGRG/GBGB)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[5]: 'BA10' (10-bit Bayer GRGR/BGBG)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[6]: 'GB10' (10-bit Bayer GBGB/RGRG)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[7]: 'BG10' (10-bit Bayer BGBG/GRGR)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[8]: 'RG12' (12-bit Bayer RGRG/GBGB)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[9]: 'BA12' (12-bit Bayer GRGR/BGBG)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[10]: 'GB12' (12-bit Bayer GBGB/RGRG)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+	[11]: 'BG12' (12-bit Bayer BGBG/GRGR)
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192
+		Size: Discrete 3864x2192

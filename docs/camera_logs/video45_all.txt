@@ -15,7 +15,7 @@ Driver Info:
 Media Driver Info:
 	Driver name      : rkisp-vir1
 	Model            : rkisp1
-	Serial           : 
+	Serial           :
 	Bus info         : platform:rkisp-vir1
 	Media version    : 6.1.99
 	Hardware revision: 0x00000000 (0)
@@ -35,12 +35,16 @@ Format Video Capture Multiplanar:
 	Pixel Format      : ''
 	Field             : Any
 	Number of planes  : 0
-	Flags             : 
+	Flags             :
 	Colorspace        : Default
 	Transfer Function : Default
 	YCbCr/HSV Encoding: Default
 	Quantization      : Default
-Selection Video Capture: crop, Left 0, Top 0, Width 0, Height 0, Flags: 
-Selection Video Capture: crop_bounds, Left 0, Top 0, Width 800, Height 600, Flags: 
-Selection Video Output: crop, Left 0, Top 0, Width 0, Height 0, Flags: 
-Selection Video Output: crop_bounds, Left 0, Top 0, Width 800, Height 600, Flags: 
+Selection Video Capture: crop, Left 0, Top 0, Width 0, Height 0, Flags:
+Selection Video Capture: crop_bounds, Left 0, Top 0, Width 3840, Height 2160, Flags:
+Selection Video Output: crop, Left 0, Top 0, Width 0, Height 0, Flags:
+Selection Video Output: crop_bounds, Left 0, Top 0, Width 3840, Height 2160, Flags:
+
+Image Processing Controls
+
+                     pixel_rate 0x009f0902 (int64)  : min=0 max=1000000000 step=1 default=1000000000 value=356800000 flags=read-only, volatile
