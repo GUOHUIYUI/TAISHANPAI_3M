@@ -1,0 +1,11 @@
+crw-rw----+ 1 root video  226,   0 Jun 26 22:58 /dev/dri/card0
+crw-rw----+ 1 root video  226,   1 Jun 26 22:58 /dev/dri/card1
+crw-rw----+ 1 root render 226, 128 Jun 26 22:58 /dev/dri/renderD128
+crw-rw----+ 1 root render 226, 129 Jun 26 22:58 /dev/dri/renderD129
+
+/dev/dri/by-path:
+total 0
+lrwxrwxrwx 1 root root  8 Jun 26 22:58 platform-27700000.npu-card -> ../card1
+lrwxrwxrwx 1 root root 13 Jun 26 22:58 platform-27700000.npu-render -> ../renderD129
+lrwxrwxrwx 1 root root  8 Jun 26 22:58 platform-display-subsystem-card -> ../card0
+lrwxrwxrwx 1 root root 13 Jun 26 22:58 platform-display-subsystem-render -> ../renderD128

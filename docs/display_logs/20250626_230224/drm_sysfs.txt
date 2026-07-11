@@ -1,0 +1,26 @@
+## /sys/class/drm/card0
+## /sys/class/drm/card0-DP-1
+status=disconnected
+enabled=disabled
+modes=
+dpms=On
+## /sys/class/drm/card0-DSI-1
+status=connected
+enabled=enabled
+modes=480x800
+dpms=On
+## /sys/class/drm/card0-HDMI-A-1
+status=disconnected
+enabled=disabled
+modes=
+dpms=On
+## /sys/class/drm/card0-Writeback-1
+status=connected
+enabled=disabled
+modes=1920x1080
+960x540
+dpms=On
+## /sys/class/drm/card1
+## /sys/class/drm/renderD128
+## /sys/class/drm/renderD129
+## /sys/class/drm/version

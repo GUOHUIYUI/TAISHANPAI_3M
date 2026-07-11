@@ -1,0 +1,1 @@
+/tmp/collect_display_info.sh: line 11: fbset: command not found

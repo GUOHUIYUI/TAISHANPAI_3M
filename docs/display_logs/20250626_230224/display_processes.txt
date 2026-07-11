@@ -1,0 +1,12 @@
+root        1656       1  0 22:58 ?        00:00:00 /usr/sbin/lightdm
+root        1708    1656  0 22:58 tty7     00:00:01 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root        2161    1656  0 22:58 ?        00:00:00 lightdm --session-child 19 22
+lightdm     2167       1  0 22:58 ?        00:00:00 /lib/systemd/systemd --user
+lightdm     2171    2167  0 22:58 ?        00:00:00 (sd-pam)
+lightdm     2199    2167  0 22:58 ?        00:00:00 /usr/bin/pipewire
+lightdm     2201    2167  0 22:58 ?        00:00:00 /usr/bin/wireplumber
+lightdm     2202    2167  0 22:58 ?        00:00:00 /usr/bin/pipewire-pulse
+lightdm     2204    2161  0 22:58 ?        00:00:01 /usr/sbin/lightdm-gtk-greeter
+lightdm     2211    2167  0 22:58 ?        00:00:00 dbus-launch --autolaunch a0ac5b0cd0c44252bb6b260d1bbe0d4b --binary-syntax --close-stderr
+lightdm     2214    2167  0 22:58 ?        00:00:00 /usr/bin/dbus-daemon --syslog-only --fork --print-pid 5 --print-address 7 --session
+root        2272    1656  0 22:58 ?        00:00:00 lightdm --session-child 15 22
