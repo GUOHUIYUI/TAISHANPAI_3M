@@ -1,0 +1,1 @@
+Linux TaishanPi-3M 6.1.99 #1 SMP Mon Apr 20 08:41:30 CST 2026 aarch64 GNU/Linux

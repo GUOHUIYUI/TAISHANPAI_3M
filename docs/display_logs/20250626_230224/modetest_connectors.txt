@@ -1,0 +1,228 @@
+trying to open device 'rockchip'...done
+Connectors:
+id	encoder	status		name		size (mm)	modes	encoders
+188	0	disconnected	HDMI-A-1       	0x0		0	187
+  props:
+	1 EDID:
+		flags: immutable blob
+		blobs:
+
+		value:
+	2 DPMS:
+		flags: enum
+		enums: On=0 Standby=1 Suspend=2 Off=3
+		value: 0
+	5 link-status:
+		flags: enum
+		enums: Good=0 Bad=1
+		value: 0
+	6 non-desktop:
+		flags: immutable range
+		values: 0 1
+		value: 0
+	4 TILE:
+		flags: immutable blob
+		blobs:
+
+		value:
+	189 color_depth:
+		flags: enum
+		enums: Automatic=0 24bit=8 30bit=10
+		value: 8
+	190 color_format:
+		flags: enum
+		enums: rgb=0 ycbcr444=1 ycbcr422=2 ycbcr420=3 ycbcr_high_subsampling=4 ycbcr_low_subsampling=5 invalid_output=6
+		value: 1
+	191 color_depth_caps:
+		flags: range
+		values: 0 255
+		value: 1
+	192 color_format_caps:
+		flags: range
+		values: 0 15
+		value: 1
+	193 HDR_PANEL_METADATA:
+		flags: immutable blob
+		blobs:
+
+		value:
+	194 NEXT_HDR_SINK_DATA:
+		flags: immutable blob
+		blobs:
+
+		value:
+	195 allm_capacity:
+		flags: range
+		values: 0 1
+		value: 0
+	196 allm_enable:
+		flags: enum
+		enums: disable=0 enable=1
+		value: 0
+	197 output_hdmi_dvi:
+		flags: enum
+		enums: auto=0 force_hdmi=1 force_dvi=2
+		value: 0
+	198 output_type_capacity:
+		flags: enum
+		enums: DVI=0 HDMI=1
+		value: 0
+	7 HDR_OUTPUT_METADATA:
+		flags: blob
+		blobs:
+
+		value:
+	199 Colorspace:
+		flags: enum
+		enums: Default=0 SMPTE_170M_YCC=1 BT709_YCC=2 XVYCC_601=3 XVYCC_709=4 SYCC_601=5 opYCC_601=6 opRGB=7 BT2020_CYCC=8 BT2020_RGB=9 BT2020_YCC=10 DCI-P3_RGB_D65=11 DCI-P3_RGB_Theater=12
+		value: 0
+	200 Content Protection:
+		flags: enum
+		enums: Undesired=0 Desired=1 Enabled=2
+		value: 0
+	201 HDCP Content Type:
+		flags: enum
+		enums: HDCP Type0=0 HDCP Type1=1
+		value: 0
+	202 hdcp_encrypted:
+		flags: range
+		values: 0 2
+		value: 0
+	50 brightness:
+		flags: range
+		values: 0 100
+		value: 50
+	51 contrast:
+		flags: range
+		values: 0 100
+		value: 50
+	54 saturation:
+		flags: range
+		values: 0 100
+		value: 50
+	55 hue:
+		flags: range
+		values: 0 100
+		value: 50
+204	203	connected	DSI-1          	0x0		1	203
+  modes:
+	index name refresh (Hz) hdisp hss hse htot vdisp vss vse vtot
+  #0 480x800 60.00 480 530 540 600 800 820 822 856 30816 flags: nhsync, nvsync; type: preferred, driver
+  props:
+	1 EDID:
+		flags: immutable blob
+		blobs:
+
+		value:
+	2 DPMS:
+		flags: enum
+		enums: On=0 Standby=1 Suspend=2 Off=3
+		value: 0
+	5 link-status:
+		flags: enum
+		enums: Good=0 Bad=1
+		value: 0
+	6 non-desktop:
+		flags: immutable range
+		values: 0 1
+		value: 0
+	4 TILE:
+		flags: immutable blob
+		blobs:
+
+		value:
+	50 brightness:
+		flags: range
+		values: 0 100
+		value: 50
+	51 contrast:
+		flags: range
+		values: 0 100
+		value: 50
+	54 saturation:
+		flags: range
+		values: 0 100
+		value: 50
+	55 hue:
+		flags: range
+		values: 0 100
+		value: 50
+206	0	disconnected	DP-1           	0x0		0	205
+  props:
+	1 EDID:
+		flags: immutable blob
+		blobs:
+
+		value:
+	2 DPMS:
+		flags: enum
+		enums: On=0 Standby=1 Suspend=2 Off=3
+		value: 0
+	5 link-status:
+		flags: enum
+		enums: Good=0 Bad=1
+		value: 0
+	6 non-desktop:
+		flags: immutable range
+		values: 0 1
+		value: 0
+	4 TILE:
+		flags: immutable blob
+		blobs:
+
+		value:
+	208 color_depth:
+		flags: enum
+		enums: Automatic=0 18bit=6 24bit=8 30bit=10
+		value: 0
+	209 color_format:
+		flags: enum
+		enums: rgb=0 ycbcr444=1 ycbcr422=2 ycbcr420=3 ycbcr_high_subsampling=4 ycbcr_low_subsampling=5
+		value: 0
+	210 color_depth_caps:
+		flags: range
+		values: 0 256
+		value: 1
+	211 color_format_caps:
+		flags: range
+		values: 0 64
+		value: 0
+	200 Content Protection:
+		flags: enum
+		enums: Undesired=0 Desired=1 Enabled=2
+		value: 0
+	201 HDCP Content Type:
+		flags: enum
+		enums: HDCP Type0=0 HDCP Type1=1
+		value: 0
+	212 hdcp_encrypted:
+		flags: range
+		values: 0 2
+		value: 0
+	213 HDR_PANEL_METADATA:
+		flags: immutable blob
+		blobs:
+
+		value:
+	7 HDR_OUTPUT_METADATA:
+		flags: blob
+		blobs:
+
+		value:
+	50 brightness:
+		flags: range
+		values: 0 100
+		value: 50
+	51 contrast:
+		flags: range
+		values: 0 100
+		value: 50
+	54 saturation:
+		flags: range
+		values: 0 100
+		value: 50
+	55 hue:
+		flags: range
+		values: 0 100
+		value: 50
+
