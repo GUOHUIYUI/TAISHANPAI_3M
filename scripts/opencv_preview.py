@@ -22,6 +22,12 @@ def parse_args():
         default="clockwise",
     )
     parser.add_argument("--window-name", default="TaishanPi Camera Preview")
+    parser.add_argument(
+        "--duration",
+        type=float,
+        default=0.0,
+        help="Stop automatically after this many seconds; 0 runs until q or Esc.",
+    )
     return parser.parse_args()
 
 
@@ -86,8 +92,11 @@ def main():
     cv2.resizeWindow(args.window_name, args.screen_width, args.screen_height)
 
     frame_count = 0
+    total_frames = 0
+    fps_samples = []
+    run_start = time.monotonic()
     measured_fps = 0.0
-    sample_start = time.monotonic()
+    sample_start = run_start
 
     try:
         while True:
@@ -97,9 +106,11 @@ def main():
                 return 4
 
             frame_count += 1
+            total_frames += 1
             elapsed = time.monotonic() - sample_start
             if elapsed >= 1.0:
                 measured_fps = frame_count / elapsed
+                fps_samples.append(measured_fps)
                 frame_count = 0
                 sample_start = time.monotonic()
 
@@ -118,9 +129,23 @@ def main():
             cv2.imshow(args.window_name, frame)
             if (cv2.waitKey(1) & 0xFF) in (27, ord("q")):
                 break
+            if args.duration > 0 and time.monotonic() - run_start >= args.duration:
+                break
     finally:
         capture.release()
         cv2.destroyAllWindows()
+
+    run_seconds = time.monotonic() - run_start
+    average_fps = total_frames / run_seconds if run_seconds > 0 else 0.0
+    minimum_fps = min(fps_samples) if fps_samples else average_fps
+    maximum_fps = max(fps_samples) if fps_samples else average_fps
+    print(
+        "PREVIEW_SUMMARY "
+        f"frames={total_frames} duration_s={run_seconds:.2f} "
+        f"fps_avg={average_fps:.2f} fps_min={minimum_fps:.2f} fps_max={maximum_fps:.2f} "
+        f"size={actual_width}x{actual_height} rotate={args.rotate} "
+        f"screen={args.screen_width}x{args.screen_height}"
+    )
 
     return 0
 

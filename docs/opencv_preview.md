@@ -90,3 +90,33 @@ python3 scripts/opencv_preview.py
 | 问题 | 现象 | 原因分析 | 处理方式 |
 | --- | --- | --- | --- |
 | 待验证 | | | |
+
+## 自动验收报告
+
+`scripts/collect_opencv_preview.sh` 可以启动预览、按秒采样进程 CPU 和常驻内存，并在定时运行结束后生成 Markdown 报告。默认运行 600 秒，报告写入 `/tmp/opencv_preview_report.md`：
+
+```bash
+chmod +x scripts/collect_opencv_preview.sh
+scripts/collect_opencv_preview.sh
+```
+
+首次验证可先运行 60 秒：
+
+```bash
+scripts/collect_opencv_preview.sh 60 /tmp/opencv_preview_report.md
+```
+
+如果程序部署在其他位置，可通过环境变量覆盖默认路径：
+
+```bash
+PREVIEW_SCRIPT=/path/to/opencv_preview.py \
+scripts/collect_opencv_preview.sh 600 /tmp/opencv_preview_report.md
+```
+
+在 PC 端拉取报告：
+
+```bash
+adb pull /tmp/opencv_preview_report.md docs/opencv_preview_report.md
+```
+
+脚本能够自动记录实际分辨率、平均/最低/最高 FPS、CPU、RSS、运行时长和启动参数。画面方向、拉伸和主观延迟仍需人工观察，并在报告对应检查项中确认。
