@@ -120,3 +120,9 @@ adb pull /tmp/opencv_preview_report.md docs/opencv_preview_report.md
 ```
 
 脚本能够自动记录实际分辨率、平均/最低/最高 FPS、CPU、RSS、运行时长和启动参数。画面方向、拉伸和主观延迟仍需人工观察，并在报告对应检查项中确认。
+
+验收脚本默认使用 `FIT=cover` 和全屏模式：保持宽高比并轻微裁剪边缘，以铺满 `480x800` 屏幕。如果需要保留摄像头完整视野并接受少量黑边，可执行：
+
+```bash
+FIT=contain FULLSCREEN=1 scripts/collect_opencv_preview.sh 60 /tmp/opencv_preview_report.md
+```

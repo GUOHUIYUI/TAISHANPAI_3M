@@ -17,6 +17,17 @@ def parse_args():
     parser.add_argument("--screen-width", type=int, default=480)
     parser.add_argument("--screen-height", type=int, default=800)
     parser.add_argument(
+        "--fit",
+        choices=("contain", "cover", "stretch"),
+        default="contain",
+        help="How to fit the camera frame into the display area.",
+    )
+    parser.add_argument(
+        "--fullscreen",
+        action="store_true",
+        help="Use a borderless fullscreen OpenCV window.",
+    )
+    parser.add_argument(
         "--rotate",
         choices=("none", "clockwise", "counterclockwise", "180"),
         default="clockwise",
@@ -40,8 +51,23 @@ def rotate_frame(cv2, frame, direction):
     return cv2.rotate(frame, rotations[direction]) if direction in rotations else frame
 
 
-def letterbox(cv2, frame, width, height):
+def fit_frame(cv2, frame, width, height, mode):
     source_height, source_width = frame.shape[:2]
+
+    if mode == "stretch":
+        return cv2.resize(frame, (width, height), interpolation=cv2.INTER_AREA)
+
+    if mode == "cover":
+        scale = max(width / source_width, height / source_height)
+        resized_width = max(1, int(round(source_width * scale)))
+        resized_height = max(1, int(round(source_height * scale)))
+        resized = cv2.resize(
+            frame, (resized_width, resized_height), interpolation=cv2.INTER_AREA
+        )
+        left = max(0, (resized_width - width) // 2)
+        top = max(0, (resized_height - height) // 2)
+        return resized[top : top + height, left : left + width]
+
     scale = min(width / source_width, height / source_height)
     resized_width = max(1, int(source_width * scale))
     resized_height = max(1, int(source_height * scale))
@@ -89,7 +115,12 @@ def main():
     )
 
     cv2.namedWindow(args.window_name, cv2.WINDOW_NORMAL)
-    cv2.resizeWindow(args.window_name, args.screen_width, args.screen_height)
+    if args.fullscreen:
+        cv2.setWindowProperty(
+            args.window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN
+        )
+    else:
+        cv2.resizeWindow(args.window_name, args.screen_width, args.screen_height)
 
     frame_count = 0
     total_frames = 0
@@ -115,7 +146,9 @@ def main():
                 sample_start = time.monotonic()
 
             frame = rotate_frame(cv2, frame, args.rotate)
-            frame = letterbox(cv2, frame, args.screen_width, args.screen_height)
+            frame = fit_frame(
+                cv2, frame, args.screen_width, args.screen_height, args.fit
+            )
             cv2.putText(
                 frame,
                 f"FPS {measured_fps:.1f}",
@@ -144,7 +177,8 @@ def main():
         f"frames={total_frames} duration_s={run_seconds:.2f} "
         f"fps_avg={average_fps:.2f} fps_min={minimum_fps:.2f} fps_max={maximum_fps:.2f} "
         f"size={actual_width}x{actual_height} rotate={args.rotate} "
-        f"screen={args.screen_width}x{args.screen_height}"
+        f"screen={args.screen_width}x{args.screen_height} fit={args.fit} "
+        f"fullscreen={int(args.fullscreen)}"
     )
 
     return 0

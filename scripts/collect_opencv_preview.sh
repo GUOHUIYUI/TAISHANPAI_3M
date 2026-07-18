@@ -12,6 +12,8 @@ HEIGHT="${HEIGHT:-720}"
 ROTATE="${ROTATE:-clockwise}"
 SCREEN_WIDTH="${SCREEN_WIDTH:-480}"
 SCREEN_HEIGHT="${SCREEN_HEIGHT:-800}"
+FIT="${FIT:-cover}"
+FULLSCREEN="${FULLSCREEN:-1}"
 DISPLAY="${DISPLAY:-:0}"
 XAUTHORITY="${XAUTHORITY:-/var/run/lightdm/root/:0}"
 QT_QPA_FONTDIR="${QT_QPA_FONTDIR:-/usr/share/fonts}"
@@ -45,14 +47,19 @@ fi
 
 export DISPLAY XAUTHORITY QT_QPA_FONTDIR
 
-"$PYTHON" "$PREVIEW_SCRIPT" \
+set -- "$PYTHON" "$PREVIEW_SCRIPT" \
     --device "$DEVICE" \
     --width "$WIDTH" \
     --height "$HEIGHT" \
     --rotate "$ROTATE" \
+    --fit "$FIT" \
     --screen-width "$SCREEN_WIDTH" \
     --screen-height "$SCREEN_HEIGHT" \
-    --duration "$DURATION" >"$PREVIEW_LOG" 2>&1 &
+    --duration "$DURATION"
+if [ "$FULLSCREEN" = "1" ]; then
+    set -- "$@" --fullscreen
+fi
+"$@" >"$PREVIEW_LOG" 2>&1 &
 PREVIEW_PID=$!
 
 echo "[opencv-preview] pid=$PREVIEW_PID, collecting for ${DURATION}s"
@@ -74,7 +81,7 @@ SUMMARY="$(grep 'PREVIEW_SUMMARY' "$PREVIEW_LOG" | tail -n 1)"
 CPU_AVG="$(awk 'NR > 1 { sum += $2; count++ } END { if (count) printf "%.2f", sum/count; else print "N/A" }' "$SAMPLES")"
 RSS_AVG_KB="$(awk 'NR > 1 { sum += $3; count++ } END { if (count) printf "%.0f", sum/count; else print "N/A" }' "$SAMPLES")"
 RSS_MAX_KB="$(awk 'NR > 1 && $3 > max { max=$3 } END { if (max) print max; else print "N/A" }' "$SAMPLES")"
-SAMPLE_COUNT="$(awk 'END { print NR > 0 ? NR-1 : 0 }' "$SAMPLES")"
+SAMPLE_COUNT="$(awk 'END { print (NR > 0 ? NR-1 : 0) }' "$SAMPLES")"
 NOW="$(date '+%Y-%m-%d %H:%M:%S %z')"
 
 get_value() {
@@ -105,6 +112,8 @@ RUN_SECONDS="$(get_value duration_s)"
     echo "| Xauthority | \`$XAUTHORITY\` |"
     echo "| Physical screen | \`${SCREEN_WIDTH}x${SCREEN_HEIGHT}\` portrait |"
     echo "| Rotation | \`$ROTATE\` |"
+    echo "| Fit mode | \`$FIT\` |"
+    echo "| Fullscreen | \`$FULLSCREEN\` |"
     echo "| Preview FPS (avg/min/max) | \`${FPS_AVG:-N/A} / ${FPS_MIN:-N/A} / ${FPS_MAX:-N/A}\` |"
     echo "| Process CPU average | \`${CPU_AVG}%\` |"
     echo "| RSS average / maximum | \`${RSS_AVG_KB} KB / ${RSS_MAX_KB} KB\` |"
@@ -114,7 +123,7 @@ RUN_SECONDS="$(get_value duration_s)"
     echo "## Launch Command"
     echo
     echo '```bash'
-    echo "DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY QT_QPA_FONTDIR=$QT_QPA_FONTDIR $PYTHON $PREVIEW_SCRIPT --device $DEVICE --width $WIDTH --height $HEIGHT --rotate $ROTATE --screen-width $SCREEN_WIDTH --screen-height $SCREEN_HEIGHT"
+    echo "DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY QT_QPA_FONTDIR=$QT_QPA_FONTDIR $PYTHON $PREVIEW_SCRIPT --device $DEVICE --width $WIDTH --height $HEIGHT --rotate $ROTATE --fit $FIT --screen-width $SCREEN_WIDTH --screen-height $SCREEN_HEIGHT"
     echo '```'
     echo
     echo "## Automatic Checks"
