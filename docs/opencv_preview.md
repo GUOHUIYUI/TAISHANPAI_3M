@@ -69,27 +69,32 @@ python3 scripts/opencv_preview.py
 | --- | --- |
 | 设备节点 | `/dev/video42` |
 | 请求格式 | `NV12` |
-| 实际采集分辨率 | 待验证 |
-| 实际预览 FPS | 待验证 |
-| CPU 占用 | 待验证 |
-| 连续运行时间 | 待验证 |
-| Xorg 运行用户/Xauthority | 待验证 |
-| 屏幕方向和画面比例 | 待验证 |
+| 实际采集分辨率 | `1280x720` |
+| 实际预览 FPS | 平均 `29.98`，最低 `22.28`，最高 `31.94` |
+| CPU 占用 | 平均 `205.24%`，约占用两个 CPU 核 |
+| 常驻内存 | 平均 `82828 KB`，最大 `86528 KB` |
+| 连续运行时间 | `600.04` 秒 |
+| Xorg 运行用户/Xauthority | root，`/var/run/lightdm/root/:0` |
+| 屏幕方向和画面比例 | 顺时针旋转；`cover + fullscreen` 保持比例铺满 `480x800` 竖屏 |
 
 ## 验收标准
 
-- [ ] OpenCV 能稳定打开 `/dev/video42`。
-- [ ] 能连续读取并显示摄像头画面。
-- [ ] 画面方向正确且在 `480x800` 屏幕上不拉伸。
-- [ ] FPS 可见并完成记录。
-- [ ] 连续运行至少 10 分钟，无崩溃或持续累积延迟。
-- [ ] adb shell 或板端终端的可靠启动方式已记录。
+- [x] OpenCV 能稳定打开 `/dev/video42`。
+- [x] 能连续读取并显示摄像头画面。
+- [x] 画面方向正确且在 `480x800` 屏幕上不拉伸。
+- [x] FPS 可见并完成记录。
+- [x] 连续运行至少 10 分钟，无崩溃、花屏或持续累积延迟。
+- [x] adb shell 或板端终端的可靠启动方式已记录。
 
 ## 问题记录
 
 | 问题 | 现象 | 原因分析 | 处理方式 |
 | --- | --- | --- | --- |
-| 待验证 | | | |
+| V4L2 不上报 FPS | OpenCV 输出 `reported_fps=-1.00` | 驱动未通过 `CAP_PROP_FPS` 返回标称值 | 在程序中按实际帧数和单调时钟计算 FPS |
+| adb shell 无法访问 Xorg | `Authorization required` | shell 缺少 Xauthority | 设置 `DISPLAY=:0` 和 `XAUTHORITY=/var/run/lightdm/root/:0` |
+| 普通窗口未铺满竖屏 | 登录界面、标题栏或少量黑边可见 | 摄像头和屏幕比例不同，且窗口未全屏 | 增加 `cover` 和 `fullscreen` 模式，保持比例并轻微裁剪 |
+| Qt 字体目录警告 | 重复输出 `Cannot find font directory` | pip OpenCV 自带 Qt 不包含字体 | 设置系统字体目录；警告不影响预览 |
+| 板端报告时间不准确 | 报告日期仍为 2025 年 | 板端系统时钟未同步 | 不影响本阶段性能数据，后续部署阶段配置 RTC/NTP |
 
 ## 自动验收报告
 
@@ -126,3 +131,9 @@ adb pull /tmp/opencv_preview_report.md docs/opencv_preview_report.md
 ```bash
 FIT=contain FULLSCREEN=1 scripts/collect_opencv_preview.sh 60 /tmp/opencv_preview_report.md
 ```
+
+## 阶段结论
+
+`opencv-preview` 阶段完成。OpenCV 通过 V4L2 成功打开 ISP 主通道 `/dev/video42`，以 `1280x720 NV12` 连续采集图像；画面顺时针旋转后，通过 Xorg `:0` 显示到 `480x800` MIPI 竖屏。最终采用 `cover + fullscreen` 保持比例铺满屏幕。
+
+程序连续运行 `600.04` 秒，平均帧率 `29.98 FPS`，未出现崩溃、卡死或花屏。当前 Python 版本平均占用约两个 CPU 核，可作为后续 C++/Qt 实现和性能优化的基线。
